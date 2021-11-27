@@ -36,26 +36,26 @@ def runApps():
 CANVAS= tk.Canvas(window,height = 600,width = 600,bg = "#263D62")
 CANVAS.pack()
 
-# window.title('gameStaion')
-# window.geometry('800x650')
-# window.config(bg="white")
-# window.iconbitmap("favicon.ico")
+window.title('gameStaion')
+window.geometry('800x650')
+window.config(bg="white")
+window.iconbitmap("favicon.ico")
 
-# pic=r"C:\Users\STUDENT\Desktop\game\car-race-python-game-master\car-race-python-game-master\game.jpg"
-# pic1=p.Image.open(pic)
-# photo = ptk.PhotoImage(pic1)
+pic=r"game.jpg"
+pic1=p.Image.open(pic)
+photo = ptk.PhotoImage(pic1)
 
-FRAME = tk.Frame(window,bg="#263D42")
-FRAME.place(relwidth = 0.9,relheight=0.8,relx=0.05,rely=0.05)
+# FRAME = tk.Frame(window,bg="#263D42")
+# FRAME.place(relwidth = 0.9,relheight=0.8,relx=0.05,rely=0.05)
 
 # browser = tk.Button(text='Browser',padx= 10 ,pady = 5,fg='white',bg="#196E63",border="0" ,command=browesFiles)
 # browser.pack()
 
-Run = tk.Button(text='Run app',padx= 9 ,pady = 5,fg='white',bg="#196E63",border="0" ,command=runApps)
-Run.pack()
+# Run = tk.Button(text='Run app',padx= 9 ,pady = 5,fg='white',bg="#196E63",border="0" ,command=runApps)
+# Run.pack()
 
 
-# label1= tk.Label(window,image = photo)
+label1= tk.Label(window,image = photo)
 #
 # def open_game():
 #     # my_promgram = filedialog.askopenfilename()
@@ -70,17 +70,17 @@ Run.pack()
 # my_label=tk.Label(window,text='')
 # # lbl = tk.Label(text='0',font=('arial bold',50))
 # my_label.pack()
+
+
+# my_text = tk.Label(text="Welcome!",font=('Helvetica',50),fg="white")
+# my_text.pack(pady=50)
+
 #
 #
-# # my_text = tk.Label(text="Welcome!",font=('Helvetica',50),fg="white")
-# # my_text.pack(pady=50)
-#
-#
-#
-# label1.place(x=0,y=0,relwidth=1,relheight=1)
-#
-# btn = tk.Button(text='start game' ,command = open_game,font=("arial 20"))
-# btn.pack(pady=300)
+label1.place(x=0,y=0,relwidth=1,relheight=1)
+
+btn = tk.Button(text='start game' ,command = runApps,font=("arial 20"))
+btn.pack(pady = 3)
 
 
 # for app in apps:
